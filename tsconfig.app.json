@@ -23,6 +23,7 @@
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
 
+        // Явно подхватываем типы React + Vite
         "types": ["vite/client", "react", "react-dom"]
     },
     "include": ["src"]

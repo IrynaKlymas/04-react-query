@@ -6,7 +6,6 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({ onSubmit }: SearchBarProps) => {
-    // Ця функція буде викликана атрибутом `action`
     const handleFormAction = (formData: FormData) => {
         const query = formData.get("query") as string;
 
@@ -29,7 +28,7 @@ const SearchBar = ({ onSubmit }: SearchBarProps) => {
                 >
                     Powered by TMDB
                 </a>
-                {/* Використовуємо `action` замість `onSubmit` */}
+                {}
                 <form className={styles.form} action={handleFormAction}>
                     <input
                         className={styles.input}
